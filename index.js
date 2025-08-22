@@ -78,7 +78,7 @@ function zipItemsByGlob(glob, out) {
  * Uploads the file to Google Drive
  */
 function uploadToDrive(name, path) {
-  actions.info('Uploading file to Google Drive...');
+  actions.info('Uploading file to Google Drive. fid ${folder}');
   drive.files.create({
     requestBody: {
       name,
